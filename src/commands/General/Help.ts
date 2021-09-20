@@ -40,8 +40,8 @@ export default class Command extends BaseCommand {
                 ]
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
-            return void M.reply(await request.buffer('https://c4.wallpaperflare.com/wallpaper/347/247/604/naruto-kakashi-hatake-hd-wallpaper-preview.jpg'),
-            MessageType.image,
+            return void M.reply( await request.buffer('https://wallpapercave.com/uwp/uwp1419754.png'),  
+            MessageType.image,            
                         undefined,
                         undefined,
                 `${text} 📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
