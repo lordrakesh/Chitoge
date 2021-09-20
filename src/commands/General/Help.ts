@@ -40,7 +40,7 @@ export default class Command extends BaseCommand {
                 ]
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
-            return void M.reply(await request.buffer('https://freeaddon.com/wallpaper/kakashi/thumb444x250-07.jpg'),
+            return void M.reply(await request.buffer('https://c4.wallpaperflare.com/wallpaper/347/247/604/naruto-kakashi-hatake-hd-wallpaper-preview.jpg'),
             MessageType.image,
                         undefined,
                         undefined,
