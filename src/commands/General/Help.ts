@@ -40,7 +40,10 @@ export default class Command extends BaseCommand {
                 ]
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
-            return void M.reply( 
+            return void M.reply(await request.buffer('https://freeaddon.com/wallpaper/kakashi/thumb444x250-07.jpg'),
+            MessageType.image,
+                        undefined,
+                        undefined,
                 `${text} 📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
             )
         }
