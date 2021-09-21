@@ -20,7 +20,7 @@ export default class Command extends BaseCommand {
 
         
         
-return void M.reply(await request.buffer('https://i.pinimg.com/originals/c1/c4/39/c1c43945cc6e14e72bf45efb7244ea89.jpg'),
+return void M.reply(await request.buffer('https://i.pinimg.com/736x/b7/ce/b9/b7ceb9d0beceac0e453322a96ad1df5b.jpg'),
 MessageType.image,
             undefined,
             undefined,
