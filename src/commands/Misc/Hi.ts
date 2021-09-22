@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
         MessageType.image,
                     undefined,
                     undefined,
-            `✇ Hey there It's Kakashi😆 how you doing..?`
+                    `✇ Hey there It's Kakashi😆 how you doing..?`
         )
     }
 }
