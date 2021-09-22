@@ -32,7 +32,13 @@ export default class Command extends BaseCommand {
                     categories[info.config.category].push(info)
                 }
             }
-            let text = `✇𝓚𝓪𝓴𝓪𝓼𝓱𝓲'𝓼 𝓒𝓸𝓶𝓶𝓪𝓷𝓭 𝓛𝓲𝓼𝓽 〽\n\n`
+            let text = `╭─「 ✇ Hello ✇ 」
+                        │ 
+                        │❏ Name: Kakashi Hatake
+                        │❏ Prefix: !
+                        ╰────────────┈ ❁۪۪✇
+                         
+                        Command List\n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}*\n❐ \`\`\`${categories[
