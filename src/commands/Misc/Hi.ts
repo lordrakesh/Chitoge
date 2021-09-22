@@ -17,13 +17,14 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         // eslint-disable-next-line @typescript-eslint/no-var-requires
-        const image = this.client.assets.get('Kakashi')
+        const image = this.client.assets.get('chitoge')
         if (!image) return void null
-        return void M.reply(await request.buffer('https://wallpapercave.com/uwp/uwp1426745.png'),
-        MessageType.image,
-                    undefined,
-                    undefined,
-                    `✇ Hey there It's Kakashi😆 how you doing..?`
+        return void M.reply(
+            image,
+            MessageType.image,
+            undefined,
+            undefined,
+            `✇ Hey there It's Kakashi😆 how you doing..?`
         )
     }
 }
