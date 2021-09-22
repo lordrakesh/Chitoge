@@ -24,7 +24,7 @@ return void M.reply(await request.buffer('https://i.pinimg.com/736x/dc/b1/91/dcb
 MessageType.image,
             undefined,
             undefined,
-            `✇ *Kakashi* 〽 \n\n🍀 *Description:* Use *!mod* Command for repo or get owner number`
+            `✇ *Kakashi* 〽 \n\n🍀 *Description:* Use *!mods* Command for repo or get owner number`
            
 
 )
