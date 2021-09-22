@@ -8,7 +8,7 @@ import { ISimplifiedMessage } from '../../typings'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'chitoge',
+            command: 'Kakashi',
             description: 'Displays the info',
             category: 'misc',
             usage: `${client.config.prefix}chitoge`,
@@ -20,7 +20,7 @@ export default class Command extends BaseCommand {
 
         
         
-return void M.reply(await request.buffer('https://i.pinimg.com/736x/b7/ce/b9/b7ceb9d0beceac0e453322a96ad1df5b.jpg'),
+return void M.reply(await request.buffer('https://i.pinimg.com/736x/dc/b1/91/dcb191b5d7b12d20befcb034050c0f69.jpg'),
 MessageType.image,
             undefined,
             undefined,
