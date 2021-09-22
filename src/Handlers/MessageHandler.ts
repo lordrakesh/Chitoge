@@ -38,7 +38,7 @@ export default class MessageHandler {
                         return void M.reply(res.data.cnt)
                     })
                     .catch(() => {
-                        M.reply(`No..stickers..please..`)
+                        M.reply(`Well....`)
                     })
             }
         }
