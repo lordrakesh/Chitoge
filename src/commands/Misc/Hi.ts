@@ -18,6 +18,6 @@ export default class Command extends BaseCommand {
         MessageType.image,
                     undefined,
                     undefined,
-                    `✇ *It's Kakashi* 〽 \n\n😆 *Hey there* how you doing`
+                    `✇ *It's Kakashi* 〽 \n\n😆 *Hey there* how you doing..?`
     }
 }
