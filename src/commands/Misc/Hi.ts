@@ -14,6 +14,10 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-        return void (await M.reply(`I don't have time to have a conversation with someone like you. Use something from *!help* list if you want anything.`))
+        return void M.reply(await request.buffer('https://i.pinimg.com/originals/be/f2/29/bef229a7ce4832a802fef81101dbd971.jpg'),
+        MessageType.image,
+                    undefined,
+                    undefined,
+                    `✇ *It's Kakashi* 〽 \n\n😆 *Hey there* how you doing`
     }
 }
