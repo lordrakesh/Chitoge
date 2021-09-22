@@ -24,7 +24,7 @@ return void M.reply(await request.buffer('https://i.pinimg.com/736x/dc/b1/91/dcb
 MessageType.image,
             undefined,
             undefined,
-            `✇ *Kakashi* 〽 \n\n🍀 *Description:* Maintained Fork of WhatsApp Botto Void\n\n🌐 *URL:* https://github.com/well300/Chitoge\n\n📂 *Repository:* https://github.com/well300/Chitoge`
+            `✇ *Kakashi* 〽 \n\n🍀 *Description:* Use *!mod* Command for repo or get owner number`
            
 
 )
