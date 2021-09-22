@@ -1,17 +1,13 @@
 {
-  "compilerOptions": {            
-    "target": "ES6",                                
-    "module": "commonjs",                           
-    "lib": [
-      "ESNext"
-    ],                                   
-    "outDir": "./dist",                    
-    "strict": true,                                
-    "esModuleInterop": true,                        
-    "skipLibCheck": true,                          
-    "forceConsistentCasingInFileNames": true        
+  "compilerOptions": {
+    "lib": ["es2016", "dom"],
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "types": ["node"],
+    "removeComments": true,
+    "outDir": "dist"
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["**.ts", "src/tictactoe.ts"],
+  "exclude": ["node_modules"]
 }
