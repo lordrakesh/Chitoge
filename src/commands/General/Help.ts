@@ -1,9 +1,8 @@
-  
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
 import { ICommand, IParsedArgs, ISimplifiedMessage } from '../../typings'
-import { MessageType } from '@adiwajshing/baileys'
+import { MessageType, Mimetype } from '@adiwajshing/baileys'
 import request from '../../lib/request'
 
 
@@ -19,6 +18,10 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
+            const n = [
+            './assets/videos/chitoge/chitoge.mp4'
+        ]
+        let chitoge = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
             const commands = this.handler.commands.keys()
             const categories: { [key: string]: ICommand[] } = {}
@@ -32,7 +35,7 @@ export default class Command extends BaseCommand {
                     categories[info.config.category].push(info)
                 }
             }
-            let text = `👋 Konichiwa! *${M.sender.username}*, I'm 𝙆𝙖𝙠𝙖𝙨𝙝𝙞 ✇ . The usable commands are listed below.\n\n\n\n`
+            let text = `👋 Konichiwa! *${M.sender.username}*, I'm 𝙆𝙖𝙠𝙖𝙨𝙝𝙞 ✇ . The usable commands are listed below.\n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}*\n❐ \`\`\`${categories[
@@ -40,11 +43,9 @@ export default class Command extends BaseCommand {
                 ]
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
-            return void M.reply( await request.buffer('https://wallpapercave.com/uwp/uwp1422751.png'),  
-            MessageType.image,            
-                        undefined,
-                        undefined,
-                `${text} 📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
+            return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
+            mimetype: Mimetype.gif,
+            caption: `${text} 📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
