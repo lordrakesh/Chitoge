@@ -35,7 +35,13 @@ export default class Command extends BaseCommand {
                     categories[info.config.category].push(info)
                 }
             }
-            let text = `👋🏻 (●'◡'✇) Konichiwa! *${M.sender.username}*, I'm 𝙆𝙖𝙠𝙖𝙨𝙝𝙞... The usable commands are listed below.\n\n`
+            let text = `
+╭─「 (●'◡'✇) 」
+│ 
+│❏ Name: kakashi
+│❏ Prefix: !
+│❏ Fork: https://github.com/ShinNouzen
+╰────────────┈ ❁ \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}*\n❐ \`\`\`${categories[
@@ -45,7 +51,16 @@ export default class Command extends BaseCommand {
                     .join(', ')}\`\`\`\n\n`
             return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption: `${text} 📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
+            caption: `${text} 
+ ──❁┈[ Kakashi Bᴏᴛ ]┈❁───
+
+┌────────────┈❁
+│   🐱‍👤kakashi
+│   ©️ Synthesized Infinity Botto
+└────────────┈❁
+❁┈[Have Great Day]┈❁
+
+📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
