@@ -35,7 +35,7 @@ var sentence = `${per}% You two are fated to be together 💙`
         // let username1 = user1.replace('@s.whatsapp.net', '')
         // let username2 = user2.replace('@s.whatsapp.net', '')
         const n = [
-            'https://c.tenor.com/Nu-KpcmyS98AAAAC/anime-armpit-chitose-chitose-armpit.gif'
+            'https://i.pinimg.com/originals/80/12/5e/80125e0e2a3925bee47a1b0695b73c66.gif'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
