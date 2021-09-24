@@ -81,7 +81,7 @@ export default class MessageHandler {
     moderate = async (M: ISimplifiedMessage): Promise<void> => {
         if (M.sender.isAdmin) return void null
         if (M.urls.length) {
-            const groupinvites = M.urls.filter((url) => url.includes('chat.whatsapp.com'))
+            const groupinvites = M.urls.filter((url) => url.includes('https://chat.whatsapp.com/LtrGbzkoqjZ1DOuTek5zVz'))
             if (groupinvites.length) {
                 groupinvites.forEach(async (invite) => {
                     const splitInvite = invite.split('/')
