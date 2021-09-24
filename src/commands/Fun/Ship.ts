@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
             command: 'ship',
             description: 'Ship with the person you like.',
             category: 'fun',
-            usage: `${client.config.prefix}ship [tag user]`
+            usage: `${client.config.prefix}ship [tag/quote user]`
         })
     }
     exec = promisify(exec)
@@ -36,13 +36,13 @@ export default class Command extends BaseCommand {
         if (percentage < 25) {
             sentence = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\tWorse than average 😔`
         } else if (percentage < 50) {
-            sentence = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\tI don't know about this 🙂`
+            sentence = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\tI don't know about this 😬`
         } else if (percentage < 75) {
-            sentence = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\t\tGood, I guess 💖`
+            sentence = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\t\tGood, I guess 💕`
         } else if (percentage < 90) {
-            sentence = `\t\t\t\t\t*ShipCent : ${percentage}%* \nAmazing! You two will be a good couple 💞 `
+            sentence = `\t\t\t\t\t*ShipCent : ${percentage}%* \nAmazing! You two will be a good couple 💖 `
         } else {
-            sentence = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\tYou two are fated to be together 💕`
+            sentence = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\tYou two are fated to be together 💞`
         }
 
         if (M.quoted?.sender && !M.mentioned.includes(M.quoted.sender)) M.mentioned.push(M.quoted.sender)
@@ -63,7 +63,7 @@ export default class Command extends BaseCommand {
         })
         // choose a random gif from the array
         const gifLink = ship[Math.floor(Math.random() * ship.length)].gifLink
-        let caption = `\t💗 *Matchmaking...* 💗 \n`
+        let caption = `\t❣️ *Matchmaking...* ❣️ \n`
         caption += `\t\t---------------------------------\n`
         caption += `@${user1.split('@')[0]}  x  @${user2.split('@')[0]}\n`
         caption += `\t\t---------------------------------\n`
