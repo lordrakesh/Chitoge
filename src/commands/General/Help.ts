@@ -41,7 +41,7 @@ export default class Command extends BaseCommand {
 │❏ Name: kakashi
 │❏ Prefix: !
 │❏ Follow: https://github.com/ShinNouzen
-╰────────────┈ ❁ \n\n`
+╰────────────┈💗〽 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}*\n❐ \`\`\`${categories[
