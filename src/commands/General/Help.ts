@@ -40,7 +40,8 @@ export default class Command extends BaseCommand {
 │ 
 │❏ Name: kakashi
 │❏ Prefix: !
-│❏ Follow: https://github.com/ShinNouzen
+│❏ Follow: 👇🏼
+│🔰 https://github.com/ShinNouzen
 ╰────────────┈💗〽 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
