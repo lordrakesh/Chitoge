@@ -34,9 +34,9 @@ export default class Command extends BaseCommand {
         const percentage = Math.floor(Math.random() * 100)
         let sentence
         if (percentage < 25) {
-            sentence = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\tWorse than average 😔`
+            sentence = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\tWorse than average 💔`
         } else if (percentage < 50) {
-            sentence = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\tI don't know about this 😬`
+            sentence = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\tI don't know about this 💗`
         } else if (percentage < 75) {
             sentence = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\t\tGood, I guess 💕`
         } else if (percentage < 90) {
