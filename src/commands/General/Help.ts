@@ -55,12 +55,12 @@ export default class Command extends BaseCommand {
  ──❁┈[ Kakashi Bᴏᴛ ]┈❁───
 
 ┌────────────┈❁
-│   💟𝓾𝓻𝓪𝓻𝓪𝓴𝓪
+│   🎀𝓾𝓻𝓪𝓻𝓪𝓴𝓪
 │   ©️ Synthesized Infinity Botto
 └────────────┈❁
 ❁┈[Have Great Day]┈❁
 
-📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
+🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
@@ -80,5 +80,5 @@ export default class Command extends BaseCommand {
         )
     }
 
-    emojis = ['♟', '♻️', '🌈', '🎵', '❄', '👑', '🚫', '♦️', '✨']
+    emojis = ['🎈', '✨', '🎁', '🎵', '❄', '💝', '🚫', '♦️', '🎆']
 }
