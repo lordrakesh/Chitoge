@@ -38,7 +38,7 @@ export default class MessageHandler {
                         return void M.reply(res.data.cnt)
                     })
                     .catch(() => {
-                        M.reply(`Well....`)
+                        M.reply(`What Would Deku Do In A Time Like This?`)
                     })
             }
         }
@@ -60,7 +60,7 @@ export default class MessageHandler {
                 sender.username
             )} in ${chalk.cyanBright(groupMetadata?.subject || 'DM')}`
         )
-        if (!command) return void M.reply('No such command, Baka! Have you never seen someone use the command *!help*.')
+        if (!command) return void M.reply('Eeeh No such command, Baka! Have you never seen someone use the command *!help*.')
         const user = await this.client.getUser(M.sender.jid)
         if (user.ban) return void M.reply("You're Banned from using commands.")
         const state = await this.client.DB.disabledcommands.findOne({ command: command.config.command })
@@ -81,7 +81,7 @@ export default class MessageHandler {
     moderate = async (M: ISimplifiedMessage): Promise<void> => {
         if (M.sender.isAdmin) return void null
         if (M.urls.length) {
-            const groupinvites = M.urls.filter((url) => url.includes('https://chat.whatsapp.com/LtrGbzkoqjZ1DOuTek5zVz'))
+            const groupinvites = M.urls.filter((url) => url.includes('wa.me/917993034080'))
             if (groupinvites.length) {
                 groupinvites.forEach(async (invite) => {
                     const splitInvite = invite.split('/')
