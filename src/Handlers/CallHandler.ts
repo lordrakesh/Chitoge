@@ -31,6 +31,6 @@ export default class CallHandler {
         ]
 
         await this.client.sendWA(`${tag},${JSON.stringify(json)}`)
-        await this.client.sendMessage(caller, `Don't Fucking call me.`, MessageType.text)
+        await this.client.sendMessage(caller, `Hey please don't call me again.`, MessageType.text)
     }
 }
