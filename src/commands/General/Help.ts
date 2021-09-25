@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
                 }
             }
             let text = `
-╭─「 (●'◡'✇) 」
+╭─「（＾∀＾●）ﾉｼ 」
 │❏ User: *${M.sender.username}*
 │❏ Name: 𝓾𝓻𝓪𝓻𝓪𝓴𝓪
 │❏ Prefix: !
@@ -52,7 +52,7 @@ export default class Command extends BaseCommand {
             return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
             mimetype: Mimetype.gif,
             caption: `${text} 
- ──❁┈[ Kakashi Bᴏᴛ ]┈❁───
+ ──❁┈[ Uraraka Bᴏᴛ ]┈❁───
 
 ┌────────────┈❁
 │   🎀𝓾𝓻𝓪𝓻𝓪𝓴𝓪
