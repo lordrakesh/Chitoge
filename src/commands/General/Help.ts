@@ -38,10 +38,10 @@ export default class Command extends BaseCommand {
             let text = `
 ╭─「 (●'◡'✇) 」
 │❏ User: *${M.sender.username}*
-│❏ Name: kakashi
+│❏ Name: 𝓾𝓻𝓪𝓻𝓪𝓴𝓪
 │❏ Prefix: !
-│❏ Owner: wa.me/917993034080
-╰────────────┈💗〽                \n\n`
+│❏ Owner: <!mod>
+╰────────────┈💞                 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}*\n❐ \`\`\`${categories[
@@ -55,7 +55,7 @@ export default class Command extends BaseCommand {
  ──❁┈[ Kakashi Bᴏᴛ ]┈❁───
 
 ┌────────────┈❁
-│   🐱‍👤kakashi
+│   💟𝓾𝓻𝓪𝓻𝓪𝓴𝓪
 │   ©️ Synthesized Infinity Botto
 └────────────┈❁
 ❁┈[Have Great Day]┈❁
