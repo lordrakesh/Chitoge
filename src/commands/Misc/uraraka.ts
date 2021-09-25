@@ -8,10 +8,10 @@ import { ISimplifiedMessage } from '../../typings'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'chitoge',
+            command: 'uraraka',
             description: 'Displays the info.',
             category: 'misc',
-            usage: `${client.config.prefix}chitoge`
+            usage: `${client.config.prefix}uraraka`
         })
     }
 
@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
         let chitoge = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption: `✇Kakashi\n\n🍀 *Description: Maintained Fork of WhatsApp Botto Void*\n\n🌐 *URL: https://github.com/ShinNouzen/Chitoge* \n\n 📒 *Guide: https://github.com/ShinNouzen/Chitoge-Guides* \n` }
+            caption: `𓂀 𝓾𝓻𝓪𝓻𝓪𝓴𝓪 𓂀\n\n🍀 *Description: Maintained Fork of WhatsApp Botto Void*\n\n🌐 *URL: https://github.com/ShinNouzen/Chitoge* \n\n 📒 *Guide: https://github.com/ShinNouzen/Chitoge-Guides* \n` }
         )
     }
 }
