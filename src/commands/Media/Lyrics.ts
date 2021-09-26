@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
                 contextInfo: {
                     externalAdReply: {
                         title: `Search Term: ${term}`,
-                        body: `𓂀 𝓾𝓻𝓪𝓻𝓪𝓴𝓪 𓂀`,
+                        body: `🎀 𝙐𝙧𝙖𝙧𝙖𝙠𝙖 🎀`,
                         mediaType: 2,
                         thumbnailUrl: videos[0].thumbnail,
                         mediaUrl: videos[0].url
