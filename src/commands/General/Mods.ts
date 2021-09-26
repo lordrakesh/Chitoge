@@ -24,7 +24,7 @@ export default class Command extends BaseCommand {
                     user.notify || user.vname || user.name || 'null'
                 }*\n🍀 *Contact: https://wa.me/+${user?.jid?.split('@')[0]}*\n\n`)
         )
-        text += `\n🎀 𝙐𝙧𝙖𝙧𝙖𝙠𝙖 🎀 `
+        text += `\n✇ 𝖔𝖇𝖎𝖙𝖔 `
         return void M.reply(text)
     }
 }
