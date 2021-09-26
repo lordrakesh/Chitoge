@@ -11,7 +11,7 @@ export default class Command extends BaseCommand {
             command: 'tobi',
             description: 'Displays the info.',
             category: 'misc',
-            usage: `${client.config.prefix}uraraka`
+            usage: `${client.config.prefix}obito`
         })
     }
 
@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
         let chitoge = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption: `✇ 𝖔𝖇𝖎𝖙𝖔\n\n🍀 *Description: Maintained Fork of WhatsApp Botto Void*\n\n🌐 *URL: https://github.com/ShinNouzen/Chitoge* \n\n 📒 *Guide: https://github.com/ShinNouzen/Chitoge-Guides* \n` }
+            caption: `✇ 𝖔𝖇𝖎𝖙𝖔\n\n🍀 *Description: Maintained Fork of WhatsApp Botto Void*\n\n🌐 *URL: https://github.com/lordrakesh/Obito* \n\n 📒 *Guide: https://github.com/ShinNouzen/Chitoge-Guides* \n` }
         )
     }
 }
