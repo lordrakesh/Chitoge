@@ -38,7 +38,7 @@ export default class Command extends BaseCommand {
             let text = `
 ╭─「（＾∀＾●）ﾉｼ 」
 │❏ User: *${M.sender.username}*
-│❏ Name: 𝓾𝓻𝓪𝓻𝓪𝓴𝓪
+│❏ Name: 𝙐𝙧𝙖𝙧𝙖𝙠𝙖
 │❏ Prefix: !
 │❏ Owner: <!mod>
 ╰────────────┈💞                 \n\n`
@@ -55,7 +55,7 @@ export default class Command extends BaseCommand {
  ──❁┈[ Uraraka Bᴏᴛ ]┈❁───
 
 ┌────────────┈❁
-│   🎀𝓾𝓻𝓪𝓻𝓪𝓴𝓪
+│   🎀 𝙐𝙧𝙖𝙧𝙖𝙠𝙖
 │   ©️ Synthesized Infinity Botto
 └────────────┈❁
 ❁┈[Have Great Day]┈❁
