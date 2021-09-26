@@ -41,10 +41,10 @@ export default class Command extends BaseCommand {
 │❏ Name: 𝙐𝙧𝙖𝙧𝙖𝙠𝙖
 │❏ Prefix: !
 │❏ Owner: <!mod>
-╰────────────┈💞                 \n\n`
+╰────────────┈❥                 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
-                text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}*\n❐ \`\`\`${categories[
+                text += `〚♡Bot ${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}♡〛\n• \`\`\`${categories[
                     key
                 ]
                     .map((command) => command.config?.command)
@@ -54,11 +54,11 @@ export default class Command extends BaseCommand {
             caption: `${text} 
  ──❁┈[ Uraraka Bᴏᴛ ]┈❁───
 
-┌────────────┈❁
+┌────────────┈✽
 │   🎀 𝙐𝙧𝙖𝙧𝙖𝙠𝙖
 │   ©️ Synthesized Infinity Botto
-└────────────┈❁
-❁┈[Have Great Day]┈❁
+└────────────┈✽
+✽┈[Have Great Day]┈✽
 
 🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
@@ -80,5 +80,5 @@ export default class Command extends BaseCommand {
         )
     }
 
-    emojis = ['🎈', '✨', '🎁', '🎵', '❄', '💝', '🚫', '♦️', '🎆']
+    emojis = ['🎈', '✨', '🎁', '🎵', '🌸', '💝', '💐', '🧨', '🎆']
 }
