@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
         let chitoge = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption: `𓂀 Hi there it's 𝓾𝓻𝓪𝓻𝓪𝓴𝓪 how you doing..? \n` }
+            caption: `✇ Hi there it's *Obito* how you doing..? \n` }
         )
     }
 }
